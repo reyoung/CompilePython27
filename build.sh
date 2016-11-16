@@ -18,4 +18,3 @@ wget https://bootstrap.pypa.io/get-pip.py --no-check-certificate
 ./python get-pip.py
 rm get-pip.py
 cd ../../
-tar czvf -C dist  python27.tar.gz dist/*
