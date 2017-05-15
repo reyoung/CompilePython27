@@ -6,7 +6,7 @@ source ./common.sh
 mkdir -p dist
 DEST=$PWD/dist
 cd cpython
-./configure --enable-shared=no --with-threads --prefix=$DEST
+./configure --enable-shared=no --with-threads --prefix=$DEST CFLAGS=-fPIC CXXFLAGS=-fPIC
 make -j `nproc`
 make  install
 cd ../dist

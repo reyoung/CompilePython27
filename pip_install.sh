@@ -1,4 +1,3 @@
 #!/bin/bash
-cd `dirname $0`
-source ./common.sh
+source `dirname $0`/common.sh
 bin/pip install $*
